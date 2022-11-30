@@ -6,16 +6,16 @@ export const LaunchItem = ({ item, index }) => {
   const { flight_number, mission_name, launch_date_utc, rocket } = item;
 
   return (
-    <li key={index}>
+    <li key={index} className="launch-item">
       <div>
-        <span>{`#${flight_number}`}</span>
-        <span>{`${mission_name}`}</span>
+        <span className="flight-number">{`#${flight_number}`}</span>
+        <span className="mission-name">{`${mission_name}`}</span>
       </div>
       <div>
-        <span>
+        <span className="">
           {/* use moment here */}
-          <span>{moment(launch_date_utc).format("DD/MM/YYYY")}</span>
-          {rocket.rocket_name}
+          <span>{moment(launch_date_utc).format("LL")}</span>
+          <h2>{rocket.rocket_name}</h2>
         </span>
       </div>
     </li>

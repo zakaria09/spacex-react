@@ -19,7 +19,9 @@ export const LaunchProvider = ({ children }) => {
   const [sort, setSort] = React.useState(false);
   const [filter, setFilter] = React.useState("");
   const [years, setYears] = React.useState([]);
-  const getLaunchYears = (launches) => launches.map((l) => l.launch_year);
+  const getLaunchYears = (launches) => [
+    ...new Set(launches.map((l) => l.launch_year)),
+  ];
 
   return (
     <LaunchContext.Provider

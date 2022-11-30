@@ -1,0 +1,22 @@
+.launch-list {
+  min-height: 4rem;
+}
+
+.launch-list > .launch-item {
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  flex-direction: row;
+  padding: 0.5em 1em;
+  margin: 1rem 0;
+  justify-content: space-between;
+}
+
+.flight-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.mission-name {
+  font-size: 2rem;
+  margin-left: 2rem;
+}

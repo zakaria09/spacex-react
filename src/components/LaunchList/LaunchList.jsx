@@ -1,5 +1,6 @@
 import React from "react";
 import { LaunchItem } from "../LaunchItem";
+import "./App.css";
 
 export const LaunchList = ({ items, filter, sort }) => {
   let filteredItems = [...items];
